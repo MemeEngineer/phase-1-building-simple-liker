@@ -6,6 +6,20 @@ const FULL_HEART = '♥'
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener('Click', mimicServerCall)
+  .then(response => response.json())
+  .then(like => )
+  .catch(() => {
+     const removeHidden = document.getElementsByClassName('hidden');
+     removeHidden = document.remove('hidden');
+  document.getElementById("modal-message").innerHTML = err.message;
+  setTimeout(() => removeHidden.innerHTML('hidden') , 3000);  
+
+})
+})
+
+
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
